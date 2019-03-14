@@ -1,0 +1,27 @@
+  {
+    "name": "Air Grade System",
+    "version": "1.0",
+    "description": "Get to know the air quality of anywhere.",
+    "permissions": ["activeTab","declarativeContent","storage","webNavigation","geolocation"],
+    "content_scripts":[{"js":["jquery-3.3.1.min.js"],"matches": ["http://*/*", "https://*/*"]}],
+    "background": {
+      "scripts": ["jquery-3.3.1.min.js"],
+      "persistent": false
+    },
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "1.png",
+        "32": "2.png",
+        "48": "3.png",
+        "128": "4.png"
+      }
+    },
+    "icons": {
+      "16": "images/1.png",
+        "32": "images/2.png",
+        "48": "images/3.png",
+        "128": "images/4.png"
+    },
+    "manifest_version": 2
+  }

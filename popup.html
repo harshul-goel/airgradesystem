@@ -1,0 +1,25 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        button {
+          height: 40px;
+          width: 70px;
+          outline: none;
+        }
+      </style>
+    </head>
+    <body background="back.png">
+      <label><b>Enter the place:</b><input type="text" name="place" placeholder="City,State,Country"></label>
+      <div><button class="display">Run</button></div>
+      <div><button class="reset">Reset</button></div>
+      <div><button class="current">Current Location</button></div>
+      <div><label>Temp(in deg.C):  </label><label id="temperature"></label></div>
+      <div><label>Air Quality Index:  </label><label id="aqi"></label></div>
+      <div><label id="qual"></label></div>
+      <div><label>Latitude: </label><label id="lat"></label></div>
+      <div><label>Longitude: </label><label id="long"></label></div>
+      <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+      <script src="popup.js"></script>
+    </body>
+  </html>
